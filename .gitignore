@@ -1,0 +1,6 @@
+docs/internal-knowledge-base/node_modules
+docs/internal-knowledge-base/dist
+docs/internal-knowledge-base/.astro
+screenshot_en.png
+screenshot_nl.png
+verify_docs.py
