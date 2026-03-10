@@ -1,0 +1,16 @@
+$ astro build
+10:41:58 [content] Syncing content
+[InvalidContentEntryDataError] docs → roasting/academy data does not match collection schema.
+
+  title**: **title: Required
+
+  Hint:
+    See https://docs.astro.build/en/guides/content-collections/ for more information on content schemas.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/invalid-content-entry-data-error/
+  Location:
+    /app/docs/internal-knowledge-base/src/content/docs/roasting/academy/index.md:0:0
+  Stack trace:
+    at getEntryDataAndImages (file:///app/docs/internal-knowledge-base/node_modules/astro/dist/content/utils.js:168:26)
+    at async syncData (/app/docs/internal-knowledge-base/node_modules/astro/dist/content/loaders/glob.js:97:28)
+error: script "build" exited with code 1

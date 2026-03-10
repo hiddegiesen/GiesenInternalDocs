@@ -18,6 +18,10 @@ export default defineConfig({
 					lang: 'nl',
 				},
 			},
+			customCss: [
+				// Import the custom styling for GiesenCloud brand
+				'./src/styles/custom.css',
+			],
 			sidebar: [
 				{
 					label: 'Roasting',

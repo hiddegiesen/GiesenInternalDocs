@@ -1,0 +1,89 @@
+/* Importeer Roboto fonts in verschillende weights */
+@import '@fontsource/roboto/400.css'; /* Regular - voor platte tekst */
+@import '@fontsource/roboto/400-italic.css'; /* Italic - voor accentuering */
+@import '@fontsource/roboto/500.css'; /* Medium - voor koppen/citaten */
+@import '@fontsource/roboto/700.css'; /* Bold - voor display headlines */
+
+:root {
+  /* GiesenCloud Merk Kleuren */
+  --giesen-slate: #383838;
+  --giesen-gravel: #d9d9d4;
+  --giesen-safetyjacket: #ccff00;
+
+  /* Functionele Kleuren */
+  --giesen-sky: #4d92b8;
+  --giesen-leaf: #71b068;
+  --giesen-sun: #f5c462;
+  --giesen-boven: #fc8758;
+  --giesen-traffic: #db5a5a;
+  --giesen-grape: #7e6599;
+}
+
+/* Starlight Thema Variabelen (Light Mode Default) */
+:root[data-theme='light'] {
+  --sl-color-accent-low: var(--giesen-gravel);
+  --sl-color-accent: var(--giesen-slate);
+  --sl-color-accent-high: #1a1a1a;
+
+  --sl-color-text-accent: var(--giesen-slate);
+
+  /* Backgrounds */
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: var(--giesen-gravel);
+  --sl-color-bg-sidebar: #f5f5f5;
+
+  /* Typography Colors */
+  --sl-color-text: var(--giesen-slate);
+
+  /* Link hover states */
+  --sl-color-text-active: var(--giesen-sky);
+}
+
+/* Starlight Thema Variabelen (Dark Mode Default) */
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #2a2a2a;
+  --sl-color-accent: var(--giesen-safetyjacket);
+  --sl-color-accent-high: #e6ff66;
+
+  --sl-color-text-accent: var(--giesen-safetyjacket);
+
+  /* Backgrounds */
+  --sl-color-bg: var(--giesen-slate);
+  --sl-color-bg-nav: #2c2c2c;
+  --sl-color-bg-sidebar: #222222;
+
+  /* Typography Colors */
+  --sl-color-text: var(--giesen-gravel);
+
+  /* Link hover states */
+  --sl-color-text-active: var(--giesen-safetyjacket);
+}
+
+/* Typografie instellen (Starlight overrides) */
+:root {
+  /* Primaire font instellen op Roboto ("workhorse typeface") */
+  --sl-font: 'Roboto', sans-serif;
+  --sl-font-system: 'Roboto', system-ui, sans-serif;
+}
+
+/* Base Typographic Hierarchy overrides for GiesenCloud */
+body, p, li, td {
+  font-family: var(--sl-font);
+  font-weight: 400; /* Roboto Regular voor lopende tekst */
+}
+
+em, i {
+  font-family: var(--sl-font);
+  font-weight: 400;
+  font-style: italic; /* Roboto Italic voor accentuering */
+}
+
+h2, h3, h4, h5, h6, blockquote, .sl-markdown-content h2, .sl-markdown-content h3 {
+  font-family: var(--sl-font);
+  font-weight: 500; /* Roboto Medium voor koppen en citaten */
+}
+
+h1, .sl-markdown-content h1 {
+  font-family: var(--sl-font);
+  font-weight: 700; /* Roboto Bold voor display headlines */
+}
